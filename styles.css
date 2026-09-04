@@ -52,6 +52,30 @@ table {
   box-sizing: border-box;
 }
 
+.skip{
+    border-radius: 0 0 6px 6px;
+    transform: translateY(-100%);
+    transition: transform 150ms ease;
+    background-color: #EF9F27;
+    color: #412402;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 12px 20px;
+    position: absolute;
+    top: 0;
+    left: 8px;
+    z-index: 100;
+
+}
+
+.skip:focus {
+    transform: translateY(0);
+}
+
+main:focus {
+    outline: none;
+}
+
 
 header {
     height: 100px;
@@ -63,12 +87,16 @@ header {
 }
 
 .company-name{
+    font-size: 1.5rem;
     color: #FFFFFF;
 }
 
+nav button{
+    background-color: #0F2E33;
+    border: none;
+}
 
-
-nav img{
+nav button img{
     height: 50px;
     width: auto;
 }

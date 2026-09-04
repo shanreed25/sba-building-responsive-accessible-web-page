@@ -8,7 +8,11 @@
 - Semantic HTML Structure
 - Responsive Design Using Flexbox and Grid
     - mobile first starting at 375px
+    - header uses flexbox
+    - skip link first in the page
 - Accessibility Features
+    - skip link first in the page
+    - `tabindex="-1"` used to make`<main>` is foucusable, but not in the tab order
 - Color Contrast and Visual Design
 
 ## Reflection Questions

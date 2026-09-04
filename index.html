@@ -7,33 +7,44 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+    <!-- only way to reach this link is the keyboard -->
+    <a href="#main" class="skip">Skip to main content</a>
     <header>
-    <div class="company-name">
-        <p>
-            Accessible Design Co.
-        </p>
-    </div>
+        <div class="company-name">
+            <p>
+                Accessible Design Co.
+            </p>
+        </div>
 
-    <nav>
-        
-        <ul>
-            <li><a href="#" aria-current="page">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <img src="hamburger-menu.png" alt="">
-    </nav>
+        <nav>
+            <ul>
+                <li><a href="#" aria-current="page">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <button>
+                <img src="hamburger-menu.png" alt="hambuger menu icon">
+            </button>
+            
+        </nav>
     </header>
     
 
-    <main>
+    <main id="main" tabindex="1">
 
-        <section class="hero"></section>
-        <section class="about"></section>
-        <section class="services"></section>
-        <section class="contact"></section>
+        <section class="hero">
+            <h1>Accessible Design Co.</h1>
+        </section>
+        <section class="about">
+            <h2>About Us</h2>
+        </section>
+        <section class="services">
+            <h2>Services</h2>
+        </section>
+        <section class="contact">
+            <h2>Contact Us</h2>
+        </section>
     </main>
     
 </body>
