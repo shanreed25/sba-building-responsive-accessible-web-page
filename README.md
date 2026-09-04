@@ -7,6 +7,7 @@
 ## Features
 - Semantic HTML Structure
 - Responsive Design Using Flexbox and Grid
+    - mobile first starting at 375px
 - Accessibility Features
 - Color Contrast and Visual Design
 
