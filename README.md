@@ -13,6 +13,8 @@
 - Accessibility Features
     - skip link first in the page
     - `tabindex="-1"` used to make`<main>` is foucusable, but not in the tab order
+    - `aria-expanded` for hambuger menu 
+    - using `role="list"` because I am using `list-style: none` which make some browsers strip list semantic
 - Color Contrast and Visual Design
 
 ## Reflection Questions

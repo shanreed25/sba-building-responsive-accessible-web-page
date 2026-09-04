@@ -17,21 +17,22 @@
         </div>
 
         <nav>
-            <ul>
-                <li><a href="#" aria-current="page">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <button>
-                <img src="hamburger-menu.png" alt="hambuger menu icon">
+            <button type="button" aria-label="menu" aria-expanded="false" aria-controls="nav-list-items">
+                <!-- No alt here to prevent the name from being read twice -->
+                <img src="hamburger-menu.png" alt="">
             </button>
+            <ul id="nav-list-items" role="list">
+                <li><a href="#hero" aria-current="page">Home</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
             
         </nav>
     </header>
     
 
-    <main id="main" tabindex="1">
+    <main id="main" tabindex="-1">
 
         <section class="hero">
             <h1>Accessible Design Co.</h1>
