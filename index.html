@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accessible Design Co.</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <!-- only way to reach this link is the keyboard -->
     <a href="#main" class="skip">Skip to main content</a>
@@ -28,10 +30,10 @@
                 <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            
+
         </nav>
     </header>
-    
+
 
     <main id="main" tabindex="-1">
 
@@ -43,9 +45,12 @@
 
         <section id="about" class="about" aria-labelledby="about-h2">
             <h2 id="about-h2">About Us</h2>
-            <p>Sweet dessert shortbread caramels cotton candy topping, muffin tart jujubes lemon drops sesame snaps sweet roll tootsie roll cake biscuit marshmallow, pastry jelly-o pudding lollipop halvah jelly chocolate bar chocolate cake</p>
-            <p> Lollipop sesame snaps candy muffin chocolate bar sweet cookie pudding marshmallow pie donut, fruitcake jelly pastry cake croissant tiramisu macaroon shortbread danish</p>
-            
+            <p>Sweet dessert shortbread caramels cotton candy topping, muffin tart jujubes lemon drops sesame snaps
+                sweet roll tootsie roll cake biscuit marshmallow, pastry jelly-o pudding lollipop halvah jelly chocolate
+                bar chocolate cake</p>
+            <p> Lollipop sesame snaps candy muffin chocolate bar sweet cookie pudding marshmallow pie donut, fruitcake
+                jelly pastry cake croissant tiramisu macaroon shortbread danish</p>
+
             <img src="images/team.jpg" alt="Company Team Memebers">
         </section>
 
@@ -53,55 +58,77 @@
             <h2 id="services-h2">Services</h2>
             <div class="service-grid-layout">
 
-            <article class="service-card">
-                <img src="images/services.png" alt="Service icon">
-                <h3>Service 1</h3>
-                <p>Sweet dessert shortbread caramels cotton candy topping, muffin tart jujubes lemon drops sesame snaps sweet roll tootsie roll cake biscuit marshmallow, pastry jelly-o pudding lollipop halvah jelly chocolate bar chocolate cake</p>
-            </article>
+                <article class="service-card">
+                    <img src="images/services.png" alt="Service icon">
+                    <h3>Service 1</h3>
+                    <p>Sweet dessert shortbread caramels cotton candy topping, muffin tart jujubes lemon drops sesame
+                        snaps sweet roll tootsie roll cake biscuit marshmallow, pastry jelly-o pudding lollipop halvah
+                        jelly chocolate bar chocolate cake</p>
+                </article>
 
-            <article class="service-card">
-                <img src="images/continuous-service.png" alt="Service icon">
-                <h3>Service 2</h3>
-                <p>Sweet dessert shortbread caramels cotton candy topping, muffin tart jujubes lemon drops sesame snaps sweet roll tootsie roll cake biscuit marshmallow, pastry jelly-o pudding lollipop halvah jelly chocolate bar chocolate cake</p>
-            </article>
+                <article class="service-card">
+                    <img src="images/continuous-service.png" alt="Service icon">
+                    <h3>Service 2</h3>
+                    <p>Sweet dessert shortbread caramels cotton candy topping, muffin tart jujubes lemon drops sesame
+                        snaps sweet roll tootsie roll cake biscuit marshmallow, pastry jelly-o pudding lollipop halvah
+                        jelly chocolate bar chocolate cake</p>
+                </article>
 
-            <article class="service-card">
-                <img src="images/customer-service.png" alt="Service icon">
-                <h3>Service 3</h3>
-                <p>Sweet dessert shortbread caramels cotton candy topping, muffin tart jujubes lemon drops sesame snaps sweet roll tootsie roll cake biscuit marshmallow, pastry jelly-o pudding lollipop halvah jelly chocolate bar chocolate cake</p>
-            </article>
+                <article class="service-card">
+                    <img src="images/customer-service.png" alt="Service icon">
+                    <h3>Service 3</h3>
+                    <p>Sweet dessert shortbread caramels cotton candy topping, muffin tart jujubes lemon drops sesame
+                        snaps sweet roll tootsie roll cake biscuit marshmallow, pastry jelly-o pudding lollipop halvah
+                        jelly chocolate bar chocolate cake</p>
+                </article>
 
-            <article class="service-card">
-                <img src="images/self-service.png" alt="Service icon">
-                <h3>Service 4</h3>
-                <p>Sweet dessert shortbread caramels cotton candy topping, muffin tart jujubes lemon drops sesame snaps sweet roll tootsie roll cake biscuit marshmallow, pastry jelly-o pudding lollipop halvah jelly chocolate bar chocolate cake</p>
-            </article>
+                <article class="service-card">
+                    <img src="images/self-service.png" alt="Service icon">
+                    <h3>Service 4</h3>
+                    <p>Sweet dessert shortbread caramels cotton candy topping, muffin tart jujubes lemon drops sesame
+                        snaps sweet roll tootsie roll cake biscuit marshmallow, pastry jelly-o pudding lollipop halvah
+                        jelly chocolate bar chocolate cake</p>
+                </article>
 
             </div>
         </section>
 
         <section id="contact" class="contact" aria-labelledby="contact-h2">
             <h2 id="contact-h2">Contact Us</h2>
-            <p class="contact-info">Sweet dessert shortbread caramels cotton candy topping, muffin tart jujubes lemon drops sesame snaps</p>
+            <p class="contact-info">Sweet dessert shortbread caramels cotton candy topping, muffin tart jujubes lemon
+                drops sesame snaps</p>
 
-            <form class="contact-form">
+            <form class="contact-form" novalidate>
+                <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+
                 <div class="form-field">
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="name">
+                    <input type="text" id="name" name="name" required aria-describedby="name-error" autocomplete="name">
+                    <span class="error" id="name-error"></span>
                 </div>
 
                 <div class="form-field">
                     <label for="email">Email</label>
-                    <input type="emain" id="email" name="email">
+                    <input type="email" id="email" name="email" required aria-describedby="email-hint email-error"
+                        autocomplete="email">
+                    <span class="hint" id="email-hint">We will not spam your email</span>
+                    <span class="error" id="email-error"></span>
                 </div>
+
                 <div class="form-field">
                     <label for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject">
+                    <input type="text" id="subject" name="subject" required aria-describedby="subject-error">
+                    <span class="error" id="subject-error"></span>
                 </div>
+
                 <div class="form-field">
                     <label for="message">Message</label>
-                    <textarea id="message" name="message"></textarea>
+                    <textarea id="message" name="message" required
+                        aria-describedby="message-hint message-error"></textarea>
+                    <span class="hint" id="message-hint">Tell us about your project.</span>
+                    <span class="error" id="message-error"></span>
                 </div>
+
                 <div class="form-button">
                     <button type="submit" class="form-btn">Send Message</button>
                 </div>
@@ -111,36 +138,37 @@
 
     <footer>
         <div class="footer-top">
-        <div>
-            <div class="footer-intro">
-                <p class="footer-co-name">Accessible Design Co.</p>
-                <p class="footer-tagline">Sweet dessert shortbread caramels cotton candy topping</p>
-            </div>
-
             <div>
-                <h2 class="footer-contact-heading">Contact</h2>
-                <address>
-                    <p>message@accessibledesign.co</p>
-                    <p>(702) 800-1212</p>
-                    <p>1500 Design Co Blvd, Las Vegas, NV 89101</p>
-                </address>
+                <div class="footer-intro">
+                    <p class="footer-co-name">Accessible Design Co.</p>
+                    <p class="footer-tagline">Sweet dessert shortbread caramels cotton candy topping</p>
+                </div>
+
+                <div>
+                    <h2 class="footer-contact-heading">Contact</h2>
+                    <address>
+                        <p>message@accessibledesign.co</p>
+                        <p>(702) 800-1212</p>
+                        <p>1500 Design Co Blvd, Las Vegas, NV 89101</p>
+                    </address>
+                </div>
+
             </div>
-
+            <nav aria-label="Social Media">
+                <h2>Follow Us</h2>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">GitHub</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <h2>Follow Us</h2>
-            <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">LinkedIn</a></li>
-                <li><a href="#">GitHub</a></li>
-            </ul>
-        </nav>
-    </div>
 
-    <div class="footer-bottom">
-        <p><small>&copy; 2026 Accessible Design Co. All rights reserved.</small></p>
-    </div>
+        <div class="footer-bottom">
+            <p><small>&copy; 2026 Accessible Design Co. All rights reserved.</small></p>
+        </div>
     </footer>
-    
+
 </body>
+
 </html>

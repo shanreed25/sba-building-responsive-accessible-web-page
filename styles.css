@@ -161,6 +161,18 @@ table {
     transform: translateY(0);
 }
 
+input:focus-visible, a:focus-visible,
+textarea:focus-visible, button:focus-visible{
+    outline: 3px solid #EF9F27;
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+.site-header button:focus-visible,.site-header a:focus-visible,
+footer a:focus-visible {
+    outline-color: #FFD98A;
+}
+
 main:focus {
     outline: none;
 }
