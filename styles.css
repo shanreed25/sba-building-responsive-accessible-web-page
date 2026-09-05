@@ -181,6 +181,18 @@ nav ul {
     object-fit: cover;
 }
 
+/*Services*/
+
+.services {
+    padding: 56px 24px;
+    margin: 0 auto;
+    max-width: 1120px;
+    
+}
+
+.services h2 {
+    font-size: 1.7rem;
+}
 
 
 @media screen and (min-width: 575px) {
