@@ -76,7 +76,7 @@ main:focus {
     outline: none;
 }
 
-
+/*Header*/
 header {
     height: 100px;
     display: flex;
@@ -103,6 +103,17 @@ nav button img{
 
 nav ul {
     display: none;
+}
+
+/*Hero*/
+.hero {
+    display: grid;
+    place-content: center;
+    justify-items: start;
+    gap: 20px;
+    background-color: #123c43;
+    color: #FFFFFF;
+    text-align: left;
 }
 
 @media screen and (min-width: 575px) {
