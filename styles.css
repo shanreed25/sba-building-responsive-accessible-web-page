@@ -108,12 +108,33 @@ nav ul {
 /*Hero*/
 .hero {
     display: grid;
-    place-content: center;
     justify-items: start;
     gap: 20px;
     background-color: #123c43;
     color: #FFFFFF;
+    padding: 20px;
     text-align: left;
+}
+
+.hero h1 {
+    font-size: 2rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 250px;
+}
+
+.hero button {
+    background-color: #EF9F27;
+    color: #412402;
+    border: none;
+    border-radius: 6px;
+    padding: 14px 28px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 575px) {
