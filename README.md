@@ -26,3 +26,4 @@
 - `aria-current="page"`: tells which link is for the current page
 
 ### What tools or resources did you find most helpful during this project?
+- [CSS Grid Template Areas & grid-area Property explained!](https://www.youtube.com/watch?v=u052g8Yt2l0&t=9s)
