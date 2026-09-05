@@ -3,56 +3,145 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 
-*, *::before, *::after {
-  box-sizing: border-box;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-.skip{
+.skip {
     border-radius: 0 0 6px 6px;
     transform: translateY(-100%);
     transition: transform 150ms ease;
@@ -81,22 +170,22 @@ header {
     height: 100px;
     display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
     padding: 20px;
     background-color: #0F2E33;
 }
 
-.company-name{
+.company-name {
     font-size: 1.5rem;
     color: #FFFFFF;
 }
 
-nav button{
+nav button {
     background-color: #0F2E33;
     border: none;
 }
 
-nav button img{
+nav button img {
     height: 50px;
     width: auto;
 }
@@ -155,22 +244,24 @@ nav ul {
         "image";
 }
 
-.about h2 { 
-    grid-area: heading; 
-    margin: 0; 
+.about h2 {
+    grid-area: heading;
+    margin: 0;
     font-size: clamp(1.5rem, 4vw, 2.5rem);
 }
 
-.about p:nth-of-type(1) { 
-    grid-area: p-1; 
+.about p:nth-of-type(1) {
+    grid-area: p-1;
 }
-.about p:nth-of-type(2) { 
-    grid-area: p-2; 
+
+.about p:nth-of-type(2) {
+    grid-area: p-2;
 }
-.about p { 
+
+.about p {
     margin: 0 auto;
-    max-width: 360px; 
-    line-height: 1.65; 
+    max-width: 360px;
+    line-height: 1.65;
     text-align: left;
     font-size: clamp(1rem, 2vw, 1.125rem);
 }
@@ -190,7 +281,7 @@ nav ul {
     padding: 56px 24px;
     margin: 0 auto;
     max-width: 1120px;
-    
+
 }
 
 .services h2 {
@@ -223,11 +314,11 @@ nav ul {
     line-height: 1.2;
 }
 
-
+/*Contact*/
 .contact {
-    max-width: 1120px;
+    max-width: 420px;
     margin: 0 auto;
-    padding: 56px 24px;
+    padding: clamp(32px, 8vw, 56px) clamp(16px, 5vw, 24px);
 }
 
 .contact h2 {
@@ -235,11 +326,12 @@ nav ul {
     font-size: 1.75rem;
 }
 
-.contact-info{
+.contact-info {
     color: #4a5a58;
     max-width: 355px;
     margin: 0 0 28px;
 }
+
 .contact-form {
     display: grid;
     grid-template-columns: 1fr;
@@ -249,7 +341,7 @@ nav ul {
 .form-field label {
     color: #14201F;
     font-weight: bold;
-    
+
 }
 
 .form-field {
@@ -258,7 +350,8 @@ nav ul {
     gap: 6px;
 }
 
-.form-field input, .form-field textarea{
+.form-field input,
+.form-field textarea {
     width: 100%;
     border: 1px solid #7a8a88;
     border-radius: 8px;
@@ -269,7 +362,11 @@ nav ul {
     font-family: inherit;
 }
 
-/* --- Submit button --- */
+.form-field textarea {
+    min-height: 140px;
+}
+
+
 .form-btn {
     border-radius: 6px;
     padding: 14px 28px;
@@ -280,7 +377,7 @@ nav ul {
     color: #412402;
     background-color: #EF9F27;
     border: none;
-    height: 44px;
+    width: 100%;
 }
 
 .form-btn:hover {
@@ -289,20 +386,20 @@ nav ul {
 
 
 @media screen and (min-width: 575px) {
-    nav img{
-    display: none;
+    nav img {
+        display: none;
     }
 
     nav {
-    flex-basis: 50%;
+        flex-basis: 50%;
     }
 
     nav ul {
-    display: flex;
-    justify-content: space-around;
+        display: flex;
+        justify-content: space-around;
     }
 
-    nav ul a{
+    nav ul a {
         text-decoration: none;
         color: #FFFFFF;
     }
@@ -328,20 +425,17 @@ nav ul {
         max-width: none;
     }
 
-    .about img {
-
-    }
 }
 
 @media screen and (min-width: 1000px) {
     nav {
-    flex-basis: 40%;
+        flex-basis: 40%;
     }
 }
 
 
 @media screen and (min-width: 1440px) {
     nav {
-    flex-basis: 30%;
-}
+        flex-basis: 30%;
+    }
 }
