@@ -172,7 +172,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #0F2E33;
+    background-color: #2A1B3D;
 }
 
 .company-name {
@@ -181,7 +181,7 @@ header {
 }
 
 nav button {
-    background-color: #0F2E33;
+    background-color: #2A1B3D;
     border: none;
 }
 
@@ -199,7 +199,7 @@ nav ul {
     display: grid;
     justify-items: start;
     gap: 20px;
-    background-color: #123c43;
+    background-color: #3B2A52;
     color: #FFFFFF;
     padding: 20px;
     text-align: left;
@@ -296,20 +296,20 @@ nav ul {
 }
 
 .service-card {
-    background-color: #f2f7f6;
+    background-color: #F4F0FA;
     border-radius: 10px;
     border: 1px solid #d8e4e1;
     padding: 20px;
 }
 
 .service-card h3 {
-    color: #0f2e33;
+    color: #2A1B3D;
     font-size: 1.1rem;
     margin: 0 0 8px;
 }
 
 .service-card p {
-    color: #4a5a58;
+    color: #55495F;
     margin: 0;
     line-height: 1.2;
 }
@@ -327,7 +327,7 @@ nav ul {
 }
 
 .contact-info {
-    color: #4a5a58;
+    color: #55495F;
     max-width: 355px;
     margin: 0 0 28px;
 }
@@ -339,7 +339,7 @@ nav ul {
 }
 
 .form-field label {
-    color: #14201F;
+    color: #1E1725;
     font-weight: bold;
 
 }
@@ -353,10 +353,10 @@ nav ul {
 .form-field input,
 .form-field textarea {
     width: 100%;
-    border: 1px solid #7a8a88;
+    border: 1px solid #7C7189;
     border-radius: 8px;
     font-size: 1rem;
-    color: #14201F;
+    color: #1E1725;
     background-color: #FFFFFF;
     padding: 8px 12px;
     font-family: inherit;
