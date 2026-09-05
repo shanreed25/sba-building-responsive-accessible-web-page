@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Accessible Design Co.</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- only way to reach this link is the keyboard -->
     <a href="#main" class="skip">Skip to main content</a>
+
     <header>
         <div class="company-name">
-            <p>
-                Accessible Design Co.
-            </p>
+            <a class="logo" href="#hero">
+                <img src="images/company-logo.svg" alt="Accessible Design Co. logo">
+            </a>
         </div>
 
-        <nav class="header-nav">
+        <nav class="header-nav" role="navigation" aria-label="main">
             <button type="button" aria-label="menu" aria-expanded="false" aria-controls="nav-list-items">
                 <!-- No alt here to prevent the name from being read twice -->
                 <img src="images/hamburger-menu.png" alt="">
