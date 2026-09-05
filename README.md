@@ -20,10 +20,22 @@
 ## Reflection Questions
 
 ### What accessibility challenges did you face, and how did you address them?
+> When trying to implement to skip link feature, I tried to use `display: none` and `visibility: hidden` but they both removed the element from the tab order, so I used `translateY(-100%)` instead
 
 ### How did you ensure that your design was responsive and accessible to all users?
+- Used mobile-first and let the content decide most breakpoints and added complexity as the viewport grew. 
+- The base styles are a single column
+- About section rearranges through named grid areas so the image moves beside the text
+- The Services grid uses `repeat(auto-fit, minmax(240px, 1fr))` so the cards reflow on their own
+- Used semantic landmarks `header, nav, main, footer` 
+- Gave each section an `aria-labelledby` and pointed it at the heading, this way the landmarks are announced with meaningful names
+- Added a skip link that stays hidden until it receives focus, for keyboard users
+- The contact form was were most of the accessibility work happen
 
-- `aria-current="page"`: tells which link is for the current page
 
 ### What tools or resources did you find most helpful during this project?
 - [CSS Grid Template Areas & grid-area Property explained!](https://www.youtube.com/watch?v=u052g8Yt2l0&t=9s)
+
+
+## How to view
+> Clone the repository and open `index.html` in any browser. 
