@@ -147,20 +147,20 @@ nav ul {
     grid-template-columns: 1fr;
     gap: 40px;
     padding: 56px 24px;
+    text-align: center;
     grid-template-areas:
         "heading"
         "p-1"
         "p-2"
         "image";
-        max-width: 1120;
-        margin: 0 auto;
 }
 
 .about h2 { 
     grid-area: heading; 
     margin: 0; 
-    font-size: 1.7rem;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
 }
+
 .about p:nth-of-type(1) { 
     grid-area: p-1; 
 }
@@ -168,17 +168,19 @@ nav ul {
     grid-area: p-2; 
 }
 .about p { 
-    margin: 0; 
+    margin: 0 auto;
     max-width: 360px; 
     line-height: 1.65; 
+    text-align: left;
+    font-size: clamp(1rem, 2vw, 1.125rem);
 }
 
 .about img {
+    grid-area: image;
     border-radius: 10px;
     width: 100%;
     height: auto;
-    max-height: 240px;
-    grid-area: image;
+    aspect-ratio: 4 / 3;
     object-fit: cover;
 }
 
@@ -306,10 +308,35 @@ nav ul {
     }
 }
 
+@media screen and (min-width: 700px) {
+    .about {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "heading image"
+            "p-1     image"
+            "p-2     image";
+        align-content: start;
+        column-gap: 48px;
+        row-gap: 24px;
+        text-align: left;
+        max-width: 1100px;
+        margin-inline: auto;
+    }
+
+    .about p {
+        margin: 0;
+        max-width: none;
+    }
+
+    .about img {
+
+    }
+}
+
 @media screen and (min-width: 1000px) {
     nav {
     flex-basis: 40%;
-}
+    }
 }
 
 
