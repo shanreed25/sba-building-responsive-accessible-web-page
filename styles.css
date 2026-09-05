@@ -221,6 +221,71 @@ nav ul {
     line-height: 1.2;
 }
 
+
+.contact {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 56px 24px;
+}
+
+.contact h2 {
+    margin: 0 0 8px;
+    font-size: 1.75rem;
+}
+
+.contact-info{
+    color: #4a5a58;
+    max-width: 355px;
+    margin: 0 0 28px;
+}
+.contact-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+.form-field label {
+    color: #14201F;
+    font-weight: bold;
+    
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-field input, .form-field textarea{
+    width: 100%;
+    border: 1px solid #7a8a88;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #14201F;
+    background-color: #FFFFFF;
+    padding: 8px 12px;
+    font-family: inherit;
+}
+
+/* --- Submit button --- */
+.form-btn {
+    border-radius: 6px;
+    padding: 14px 28px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #412402;
+    background-color: #EF9F27;
+    border: none;
+    height: 44px;
+}
+
+.form-btn:hover {
+    background-color: #FFB347;
+}
+
+
 @media screen and (min-width: 575px) {
     nav img{
     display: none;
